@@ -52,7 +52,7 @@ export const SkillsBar = () => {
         </div>
         <div className="icon_skill mongodb">
             <SiMongodb />
-            <p>MonboDB</p>
+            <p>MongoDB</p>
         </div>
         <div className="icon_skill next">
             <SiNextdotjs />
