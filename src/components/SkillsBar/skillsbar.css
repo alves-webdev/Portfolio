@@ -1,0 +1,106 @@
+.skills__container{
+    padding-top: 3em;
+    align-items: center;
+}
+
+.skills__header{
+    justify-content: space-evenly;
+    color:#7fd150;
+}
+
+.skills__header h1::after{
+    content: attr(data-end);
+    color: #d3d3d3;
+  }
+
+.skills__box{
+    background-color: #3f4c6b;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1.3em;
+}
+.icon_skill {
+    font-size: 100px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.5s;
+  }
+  .icon_skill:hover{
+    transform: scale(1.1);
+  }
+  
+  .icon_skill p {
+    font-size: 10px;
+    display: none;
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: all 1s;
+  }
+  
+  .icon_skill:hover p {
+    display: block;
+    opacity: 1;
+  }
+
+  .javascript {
+    color: #F0DB4F;
+  }
+  
+  .typescript  {
+    color: #3178C6;
+  }
+  
+  .react  {
+    color: #61DAFB;
+  }
+  
+  .html {
+    color: #E34F26;
+  }
+  
+  .css  {
+    color: #1572B6;
+  }
+  
+  .node  {
+    color: #539E43;
+  }
+  
+  .vue {
+    color: #4FC08D;
+  }
+  
+  .python {
+    color: #3776AB;
+  }
+
+  .ror{
+    color:#ee0606
+  }
+  
+  .mongodb{
+    color:green
+  }
+
+  .git{
+    color: rgb(255, 153, 0)
+  }
+
+@media  (max-width: 768px)  {
+
+    .skills__container{
+        padding-top: 1em;
+    }
+ 
+    
+}

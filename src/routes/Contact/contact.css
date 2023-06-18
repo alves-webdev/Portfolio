@@ -1,0 +1,36 @@
+.contact{
+    padding-top: 6em;
+}
+ a{
+    text-decoration: none;
+    color: inherit
+}
+.boxes_container{
+    padding-top: 1em;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2em;
+    width: 350px;
+    background-color: #29335c;
+    transition: all 1s;
+    border-radius: 10px;
+}
+
+.social_box:hover{
+    filter: saturate(4);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contact_icon{
+    padding-top: 0.5em;
+}

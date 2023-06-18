@@ -1,0 +1,21 @@
+.projetos__container {
+    padding: 2rem;
+    height: 100vh;
+    min-height: max-content;
+  }
+  
+  .projetos__header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+  }
+  
