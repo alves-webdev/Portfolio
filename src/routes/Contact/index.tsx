@@ -3,8 +3,11 @@ import { BsLinkedin, BsWhatsapp, BsGithub } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
 import AnimatedPage from "../../components/AnimatedPage";
 import HeaderBar from "../../components/HeaderBar";
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <>
      <HeaderBar />
@@ -12,7 +15,7 @@ const Contact = () => {
        
       <div className="contact">
         <div>
-          <h1>Contato</h1>
+          <h1>{t("contact")}</h1>
         </div>
         <div className="boxes_container">
           <a href="mailto:gabrielsoaresalves@gmail.com" className="social_box email">

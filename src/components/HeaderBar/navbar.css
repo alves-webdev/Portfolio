@@ -15,6 +15,26 @@
   --textColor: #eee;
 }
 
+.flag-icon {
+  width: 4em;
+  height: 3em;
+  transition: all 0.5s;
+}
+
+.flag-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.lang-btns{
+  gap: 1em;
+  position: relative;
+  margin-left: -50%;
+}
+
+.language-btn{
+  background: none;
+  border: none;
+}
 
 .navbar {
     display: flex;
@@ -84,6 +104,19 @@
     header .nav-btn {
       visibility: visible;
       opacity: 1;
+    }
+
+    .lang-btns{
+      gap: 1em;
+      position: relative;
+      padding-left: 1%;
+      margin-left: 0%;
+    }
+
+    .flag-icon {
+      width: 3em;
+      height: 2em;
+      transition: all 0.5s;
     }
   
     header nav {

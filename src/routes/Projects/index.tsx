@@ -2,48 +2,49 @@ import "./projects.css"
 import HeaderBar from "../../components/HeaderBar";
 import AnimatedPage from "../../components/AnimatedPage";
 import ProjectCard from "../../components/ProjectCard";
+import { useTranslation } from 'react-i18next';
 
 
 const projetos = [
   {
-    title: "Editor de texto",
+    title: "EditorTitle",
     image: "https://i.imgur.com/JeLFvLd.png",
     link: "https://i.imgur.com/v4KtANY.mp4",
-    description: "Um editor de texto inspirado no notion para gerenciamento de conteúdo educacional. [código privado]",
+    description: "EditorDescription",
     technologiesUsed: ["react", "tailwind", "javascript"],
   },
   {
     title: "BlueAcademy",
     image: "https://i.imgur.com/aYtSXi0.png",
-    description: "Uma plataforma online para ensino in-house [Projeto legado, código privado]",
+    description: "BlueAcademyDescription",
     technologiesUsed: ["PHP", "javascript", "CSS", "HTML"]
   },
   {
-    title: "pokeapp",
+    title: "PokeApp",
     image: "https://imgur.com/evidsz4.jpg",
     link: "https://pokeapp-navy.vercel.app/",
-    description: "Um jogo simples de 'quem é esse pokemon?', o usuário deve adivinhar o pokémon utilizando a silhueta",
+    description: "PokeAppDescription",
     technologiesUsed: ["nextjs", "react", "tailwind", "typescript"],
   },
   {
     title: "Galler-IA",
     image: "https://i.imgur.com/oEAiOvC.png",
     link: "https://galler-ia.vercel.app/",
-    description: "uma galeria online onde usuários podem gerar imagens com a API da openAI e compartilha-las",
+    description: "Galler-IAdesc",
     technologiesUsed: ["nextjs", "tailwind", "mongodb", "typescript"]
   },
   {
-    title: "lista SaperX",
+    title: "listaSaperX",
     image: "https://github.com/http-gabrielalves/Saperx/blob/master/public/img1.png?raw=true",
     link: "https://github.com/http-gabrielalves/Saperx/tree/master",
-    description: "um CRUD de lista telefonica, atualmente offline porém com código funcional",
+    description: "listaSaperXdesc",
     technologiesUsed: ["typescript", "react", "css"]
   },
   {
-    title: "farmstech",
+    title: "Farmstech",
     image: "https://i.imgur.com/H8p2Wjy.png",
     link: "https://i.imgur.com/NfBE1cu.mp4",
-    description: "Uma interface para controle de dispositivos IOT a distância [Código Privado]",
+    description: "farmstechdesc",
     technologiesUsed: ["typescript", "react", "css"]
   }
   
@@ -51,6 +52,7 @@ const projetos = [
 
 
 const Projects = () => {
+  const { t } = useTranslation();
   return (
     <>
     <HeaderBar/>
@@ -67,8 +69,8 @@ const Projects = () => {
                 key={index}
                 image={project.image}
                 projectLink={project.link}
-                description={project.description}
-                title={project.title}
+                description={t(project.description)}
+                title={t(project.title)}
                 technologiesUsed={project.technologiesUsed}
               />
             ))}
